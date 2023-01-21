@@ -121,9 +121,8 @@ class Boid(mesa.Agent):
             if self.model.space.get_distance(me, other) < self.separation:
                 count_too_close += 1
 
-
         if count_too_close == 0:
-            print(count_too_close)
+            #print(count_too_close)
             self.velocity += (
                 self.cohere(neighbors) * self.cohere_factor
                 #+ self.separate(neighbors) * self.separate_factor
@@ -137,7 +136,7 @@ class Boid(mesa.Agent):
             self.model.space.move_agent(self, new_pos)
 
         else:
-            print(count_too_close)
+            #print(count_too_close)
             self.velocity += self.separate(neighbors)
             self.velocity /= np.linalg.norm(self.velocity)
 
