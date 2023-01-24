@@ -29,6 +29,7 @@ class Bank(mesa.Agent):
         self.reserves = (self.reserve_percent / 100) * self.deposits
         # amount the bank is currently able to loan
         self.bank_to_loan = 0
+        self.wealth = 0
 
     """update the bank's reserves and amount it can loan;
        this is called every time a person balances their books
