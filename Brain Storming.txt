@@ -1,0 +1,17 @@
+Brain Storming
+
+- adding new bank
+
+There is only one type of bank, so make other type of bank like 
+safe bank and risky bank, they investment differently.
+
+research topic
+
+the mechanism of the financial crisis.
+
+there is interbank network and if some bank needs dome liquidity,
+they can get money from other bank.
+
+set 10 resion. each reason has some person in the resion
+each reasion has only one bank.
+there is bank networking.
