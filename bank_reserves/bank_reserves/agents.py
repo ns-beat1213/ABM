@@ -40,10 +40,18 @@ class Bank(mesa.Agent):
         
     def investment(self):
         # the bank investment their money to get profit
+        # 50 - 50 chance to get profit from investment
         if self.random.randint(0, 1) == 0:
             self.bank_to_loan += self.bank_to_loan*0.01
+            print('earn profit')
         else:
             self.bank_to_loan += self.bank_to_loan*0.00
+            print('fail')
+            
+    def step(self):
+        # investment to earn money
+        self.investment()
+
 
 
 # subclass of RandomWalker, which is subclass to Mesa Agent
